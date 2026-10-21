@@ -24,7 +24,7 @@ python -m venv venv
 source venv/bin/activate
 ```
 
-2. se deben de instalar las dependencias usa el comando de abajo
+2. se deben de instalar las dependencias usa el siguiente comando
 pip install -r requirements.txt
 
 3. Configurar las variables del entorno
