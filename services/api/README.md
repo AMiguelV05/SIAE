@@ -15,7 +15,7 @@ cd SIAE/services/api
 
 Para que funcione en local deben de realizar los siguientes pasos
 
-##1. Crear y activar el entorno virtual
+## 1. Crear y activar el entorno virtual
 
 En la terminal, ubicado en la carpeta `services/api/`:
 
@@ -28,10 +28,10 @@ Activar en Windows (PowerShell):
 Activar en Linux / macOS:
 source venv/bin/activate
 
-2. Se deben de instalar las dependencias usa el siguiente comando
+## 2. Se deben de instalar las dependencias usa el siguiente comando
 pip install -r requirements.txt
 
-3. Configurar las variables del entorno
+## 3. Configurar las variables del entorno
 Copia el archivo de ejemplo .env.example y renómbralo a .env:
 
 cp .env.example .env
@@ -43,11 +43,11 @@ DATABASE_URL=postgresql+psycopg2://postgres.riqnxqfuzdpxnvnirqhg:[YOUR-PASSWORD]
 
 Link de la API en supabase https://supabase.com/dashboard/project/riqnxqfuzdpxnvnirqhg
 
-4. Levantar el servidor local
+## 4. Levantar el servidor local
 Una vez instalado y configurado todo, ejecuta el siguiente comando para encender la API:
 uvicorn app.main:app --reload
 
-5. Prueba la api con el siguiente link 
+## 5. Prueba la api con el siguiente link 
 http://127.0.0.1:8000/docs
 
 SI ALGO NO ABRE O NO FUNCIONA FAVOR DE DECIRMELO 
