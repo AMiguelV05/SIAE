@@ -1,8 +1,8 @@
-#SIAE - API Backend (FastAPI)
+# SIAE - API Backend (FastAPI)
 
 Este servicio contiene la arquitectura del backend, la conexión a la base de datos PostgreSQL en Supabase y las definiciones de los 17 modelos de SQLAlchemy.
 
-##Requisitos Previos
+## Requisitos Previos
 
 - Python 3.11+
 - Git
