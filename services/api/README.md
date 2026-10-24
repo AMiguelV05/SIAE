@@ -1,8 +1,8 @@
-SIAE - API Backend (FastAPI)
+#SIAE - API Backend (FastAPI)
 
 Este servicio contiene la arquitectura del backend, la conexión a la base de datos PostgreSQL en Supabase y las definiciones de los 17 modelos de SQLAlchemy.
 
-Requisitos Previos
+##Requisitos Previos
 
 - Python 3.11+
 - Git
@@ -15,17 +15,17 @@ cd SIAE/services/api
 
 Para que funcione en local deben de realizar los siguientes pasos
 
-1. Crear y activar el entorno virtual
+##1. Crear y activar el entorno virtual
 
 En la terminal, ubicado en la carpeta `services/api/`:
 
-# Crear el entorno virtual
+Crear el entorno virtual
 python -m venv venv
 
-# Activar en Windows (PowerShell):
+Activar en Windows (PowerShell):
 .\venv\Scripts\Activate.ps1
 
-# Activar en Linux / macOS:
+Activar en Linux / macOS:
 source venv/bin/activate
 
 2. Se deben de instalar las dependencias usa el siguiente comando
