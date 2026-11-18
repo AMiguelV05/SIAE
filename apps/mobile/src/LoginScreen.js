@@ -7,14 +7,30 @@ import {
   TouchableOpacity,
   Image,
   KeyboardAvoidingView,
-  Platform
+  Platform,
+  Alert
 } from 'react-native';
 import { Feather } from '@expo/vector-icons'; // Librería para los íconos de usuario, candado y ojo
+import { useRouter } from 'expo-router';
 
 export default function LoginScreen() {
+  const router = useRouter();
   const [codigo, setCodigo] = useState('');
   const [password, setPassword] = useState('');
   const [showPassword, setShowPassword] = useState(false);
+
+  const handleLogin = () => {
+    if (!codigo.trim() || !password.trim()) {
+      Alert.alert('Campos incompletos', 'Por favor ingresa tu código y contraseña.');
+      return;
+    }
+
+    // Navega a la ruta /home enviando el código del estudiante como parámetro
+    router.replace({
+      pathname: '/home',
+      params: { codigo },
+    });
+  };
 
   return (
     <KeyboardAvoidingView
@@ -77,9 +93,10 @@ export default function LoginScreen() {
         </TouchableOpacity>
 
         {/*Botón iniciar sesión*/}
-        <TouchableOpacity style={styles.button}>
+        <TouchableOpacity style={styles.button} onPress={handleLogin}>
           <Text style={styles.buttonText}>Iniciar sesión</Text>
         </TouchableOpacity>
+
         {/*Link de regístrate*/}
         <TouchableOpacity style={styles.registerContainer}>
           <Text style={styles.registerText}>¿No tienes cuenta? Regístrate</Text>
